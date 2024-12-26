@@ -1,9 +1,8 @@
 import { Navigate } from "react-router-dom";
 import { PropTypes } from "prop-types";
-import { AuthProvider } from "../context/AuthContext";
 
 const PrivateRoute = ({ children }) => {
-  const {token} = AuthProvider();
+  const token = localStorage.getItem("authToken");
 
   if (token) {
     return children; // Token mavjud bo'lsa, marshrutni och
