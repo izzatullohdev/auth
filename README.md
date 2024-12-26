@@ -30,7 +30,7 @@ Clone the project to your local machine:
 Loyihani mahalliy kompyuteringizga klonlang:
 
 ```bash
-git clone https://github.com/your-repo-name/react-auth-app.git
+git clone https://github.com/izzatullohdev/auth.git
 ```
 
 ### 2. Install Dependencies / Bog'liqliklarni O'rnatish
@@ -51,10 +51,6 @@ Dasturdan rivojlantirish rejimida foydalaning:
 ```bash
 npm run dev
 ```
-
-Visit the application at [http://localhost:5173](http://localhost:5173).
-Dasturga [http://localhost:5173](http://localhost:5173) orqali tashrif buyuring.
-
 ---
 
 ## Backend API Configuration / Backend API Sozlash
@@ -71,7 +67,7 @@ Update the `src/context/api.js` file with your backend API URL:
 
 ```javascript
 export const serverApi = async (endpoint, method = "GET", data) => {
-  const response = await fetch(`http://your-backend-url/${endpoint}`, {
+  const response = await fetch(`https://authnode-llkl.onrender.com/${endpoint}`, {
     method,
     headers: {
       "Content-Type": "application/json",
@@ -161,7 +157,7 @@ export const serverApi = async (endpoint, method = "GET", data) => {
 - **React.js**: Frontend library / Frontend kutubxonasi
 - **React Router**: Navigation and routing / Navigatsiya va marshrutlash
 - **Ant Design**: UI components / UI komponentlari
-- **Fetch API**: For communicating with the backend / Backend bilan aloqa qilish uchun
+- **AXIOS**: For communicating with the backend / Backend bilan aloqa qilish uchun
 
 ---
 
